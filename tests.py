@@ -48,8 +48,8 @@ class SurfShopTests(unittest.TestCase):
   
   def test_checkout_date_in_the_future(self):
     time_to_come = datetime.datetime(2023, 1, 27, 14, 30,20)
-    checkout = self.cart.set_checkout_date(time_to_come)
-    self.assertEqual(checkout, self.cart.checkout_date)
+    self.cart.set_checkout_date(time_to_come)
+    self.assertEqual(time_to_come, self.cart.checkout_date)
 
 
 # Q8 

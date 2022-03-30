@@ -31,7 +31,6 @@ class ShoppingCart:
             raise CheckoutDateError
         else:
             self.checkout_date = date
-            return date
 
     def apply_locals_discount(self):
       # Q11 TO SET locals_discount = True
